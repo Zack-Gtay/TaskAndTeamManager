@@ -1,5 +1,5 @@
 const Users = () => {
-  return <div>Users</div>;
+  return <div className="h-screen ">Users</div>;
 };
 
 export default Users;

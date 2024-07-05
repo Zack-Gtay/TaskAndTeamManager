@@ -1,5 +1,5 @@
 const Trash = () => {
-  return <div>Trash</div>;
+  return <div className="h-screen ">Trash</div>;
 };
 
 export default Trash;
