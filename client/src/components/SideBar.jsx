@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import PropTypes from "prop-types";
-
+import subscribePremium from "../assets/subscribePremium.jpg";
 const SideBar = ({ isOpen, onClose }) => {
   const navigation = [
     { name: "Overview", link: "/overview" },
@@ -19,10 +19,13 @@ const SideBar = ({ isOpen, onClose }) => {
         isOpen ? "translate-x-0 w-[40%]" : "w-[20%]"
       } transition-transform duration-300 ease-in-out`}
     >
-      <div className="p-4 text-lg font-extrabold text-black flex justify-between items-center">
-        ProjectPulse
+      <div className="p-4 text-lg font-bold flex flex-row items-center justify-between text-purple-700 ">
+        <div className='flex flex-row'>
+        <p>Project</p>
+        <span className="text-purple-500 m-0 p-0">Pulse</span>
+        </div>
         <IoCloseCircleOutline
-          className="text-blue-400 md:hidden"
+          className="text-purple-500 md:hidden hover:cursor-pointer"
           size={24}
           onClick={onClose}
         />
@@ -34,14 +37,26 @@ const SideBar = ({ isOpen, onClose }) => {
             to={item.link}
             className={({ isActive }) =>
               `block px-4 py-2 mt-2 text-sm font-medium ${
-                isActive ? "text-white bg-blue-500" : "text-gray-700"
-              } rounded-lg hover:bg-blue-500 hover:text-white`
+                isActive ? "text-white bg-purple-500" : "text-gray-700"
+              } rounded-lg hover:bg-purple-600 hover:text-white`
             }
             onClick={onClose}
           >
             {item.name}
           </NavLink>
         ))}
+        <div
+          style={{
+            backgroundImage: `url(${subscribePremium})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+          className="w-full opacity-90 h-[200px] rounded-2xl mt-6 p-2 flex flex-row justify-center items-center"
+        >
+          <h1 className="text-center text-white font-semibold">
+            Subscribe to Premium to access additional features.
+          </h1>
+        </div>
       </nav>
     </aside>
   );

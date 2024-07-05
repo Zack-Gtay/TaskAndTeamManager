@@ -20,7 +20,7 @@ import Navbar from "./components/Navbar";
 import TasksCompleted from "./pages/TasksCompleted";
 import TasksInProgress from "./pages/TasksInProgress";
 import TasksTodos from "./pages/TasksTodos";
-import Overview from "./pages/Dashboard";
+import Overview from "./pages/Overview";
 
 const Layout = () => {
   const user = true;
