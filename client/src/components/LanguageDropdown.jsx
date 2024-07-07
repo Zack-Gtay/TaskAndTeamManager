@@ -11,32 +11,32 @@ function classNames(...classes) {
 export default function LanguageDropdown({ currentLanguage, onSelect }) {
   const languageTable = {
     en: {
-      en: "English",
-      it: "Italian",
-      es: "Spanish",
-      fr: "French",
-      de: "German",
+      en: "Eng",
+      it: "It",
+      es: "Sp",
+      fr: "Fr",
+      de: "Ge",
     },
     es: {
-      en: "Inglés",
-      it: "Italiano",
-      es: "Español",
-      fr: "Francés",
-      de: "Alemán",
+      en: "In",
+      it: "It",
+      es: "Es",
+      fr: "Fr",
+      de: "Al",
     },
     fr: {
-      en: "Anglais",
-      it: "Italienne",
-      es: "Espagnol",
-      fr: "Français",
-      de: "Allemand",
+      en: "An",
+      it: "It",
+      es: "Es",
+      fr: "Fr",
+      de: "Al",
     },
     de: {
-      en: "Englisch",
-      es: "Spanisch",
-      it: "Italienische",
-      fr: "Französisch",
-      de: "Deutsch",
+      en: "En",
+      es: "Sp",
+      it: "It",
+      fr: "Fr",
+      de: "De",
     },
   };
 
@@ -51,9 +51,9 @@ export default function LanguageDropdown({ currentLanguage, onSelect }) {
     <div>
       <Menu as="div" className="relative inline-block text-left outline-none">
         <div className="">
-          <Menu.Button className=" bg-purple-500 outline-none border-none inline-flex w-full justify-center gap-x-1.5 rounded-md  px-1 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 ">
+          <Menu.Button className="  outline-none border-none inline-flex w-full justify-center gap-x-1.5 rounded-md  px-1 py-2 text-sm font-semibold text-gray-500    ">
             <LanguageIcon
-              className="-mr-1 h-5 w-5 text-white "
+              className="-mr-1 h-5 w-5 text-gray-600 "
               aria-hidden="true"
             />
             <p className="hidden md:list-item lg:list-item">
@@ -61,7 +61,7 @@ export default function LanguageDropdown({ currentLanguage, onSelect }) {
             </p>
 
             <ChevronDownIcon
-              className="-mr-1 h-5 w-5 text-white"
+              className="-mr-1 h-5 w-5 text-gray-500"
               aria-hidden="true"
             />
           </Menu.Button>
