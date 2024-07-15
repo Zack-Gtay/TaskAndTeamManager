@@ -5,7 +5,7 @@ const TaskSummaryCard = (props) => {
     <div
       className={`p-4 ${props.bgColor} w-full gap-4 rounded-2xl flex flex-row`}
     >
-      <div className='w-full flex flex-col gap-3'>
+      <div className='w-full flex flex-col gap-3 h-full justify-between '>
         <p className="font-light text-4xl text-black">{props.number}</p>
         <p className="font-semibold text-base text-gray-600">{props.title}</p>
       </div>
